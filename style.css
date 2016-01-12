@@ -1,0 +1,171 @@
+html, body { 
+        height: 100%; 
+        width: 100%; 
+        min-width: 100%;
+        margin: 0px 0px 0px 0px;
+        padding:0;
+        font-family: Georgia, Times, 'Times New Roman', serif;
+        font-size: 15px;
+        background-image: url(pictures/dark_embroidery.png);
+        min-width: 500px;
+        
+    }
+    header {
+        width:100%;
+        height:5%;
+        min-height: 50px;
+        min-width: 1000px;
+        background-color: #F5F5F5;
+        box-shadow: inset 0px 0px 10px 1px rgba(119, 119, 119, 0.65);
+        -moz-box-shadow: inset 0px 0px 10px 1px rgba(119, 119, 119, 0.65);
+        -webkit-box-shadow: inset 0px 0px 10px 1px rgba(119, 119, 119, 0.65);
+    }
+    nav{
+        position:relative; 
+        width:50%;
+        left:40%;
+        height: 100%;
+        min-height: 50px;
+        min-width: 400px;
+        top:0%;
+        background-color: none;
+        text-align: center;
+    }
+    nav li { 
+        display: inline-flex;
+        height: 100%;
+        padding-top: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0 5px 0;
+        text-align:center;  
+        justify-content: space-around;
+    }
+    nav li:hover {
+        height:70%;
+        background-color: #E2DDD9;
+        box-shadow: inset 0px 0px 0px 1px rgba(119, 119, 119, 0.35);
+        -moz-box-shadow: inset 0px 0px 10px 1px rgba(119, 119, 119, 0.35);
+        -webkit-box-shadow: inset 0px 0px 10px 1px rgba(119, 119, 119, 0.35);
+    }
+    
+    nav a{
+        text-decoration: none;
+        font-size: 1.1vw;
+        min-font-size: 15px;
+        color:#000000;
+    }
+    section { 
+        position: relative;
+        width:70%;
+        left:15%;
+        text-align: center;
+        padding-bottom: none;
+    }
+    footer{
+        clear:both;
+        height: auto;
+        padding-top: 1%;
+        padding-bottom:1%;
+        background-color:#607D8B;
+    }
+    
+    h1 {
+        position: absolute;
+        left:15%;
+        font-style:none;
+        font-weight: bold;
+        top:-1%;
+        font-size: 25px;
+        font-family: 'Arvo', serif;
+    }
+    h2 {
+        font-style: none;
+        font-size: 45px;
+        text-align: center;
+        line-height: 90%;
+        color: #bfbfbf;
+        text-shadow: 2px 2px #000000;
+        font-family: 'Mate', serif;
+    }
+    h3 {
+        font-size: 25px;
+        text-align: center;
+        color: #bfbfbf;
+        text-shadow: 2px 2px #000000;
+        font-family: Georgia, Times, 'Times New Roman', serif;
+    }
+    h4 {
+        font-size: 25px;
+        text-align: center;
+        color: #000000;
+        text-shadow: 2px 2px #bfbfbf;
+        font-family: 'Georgia';
+        line-height: normal;
+    }
+    p{
+        padding-left:15px;
+        padding-right:15px;
+        padding-bottom:15px;
+        font-family: Georgia, Times, 'Times New Roman', serif;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    table {
+        display: table;
+        width:100%;
+        border-collapse: separate;
+        
+    }
+    #tabletext{
+        padding-left: 40px;
+        min-width: 400px;
+        width:40%;
+    }
+#me {
+        position: relative;
+        width:50%;
+        min-width: 200px;
+        height:auto;
+        left:0%;
+    }
+#social{ 
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#wrapper {
+    padding-top: 10px;
+    width: 100%;
+    min-width: 1000px;
+    background-color: #F0E8D0;
+    margin-left:auto;
+    margin-right:auto;
+}
+#center {
+    text-align: center;
+    padding-top: 10px;
+    min-width: 200px;
+    float: left;
+    width:15%;
+}
+#rightcol {
+    
+    text-align: center;
+    padding-top: 10px;
+    min-width: 200px;
+    float: left;
+    width: 15%;
+}
+#leftcol {
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 27.5%;
+    min-width: 200px;
+    float: left;
+    width: 15%;
+}
+#onecol {
+    text-align: center;
+    padding-left: 25%;
+    width: 50%;
+}
