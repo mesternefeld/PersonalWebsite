@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.grey-red.min.css">
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -9,29 +10,51 @@
 <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Mate' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" rel="alternate stylesheet" href="../dist/css/lightbox.min.css">
 
 <title>MSternefeld</title>
 </head>
 <body>
-    <header>
-        <h1>Marianna E. Sternefeld</h1>
-    <nav>
-        
-            <ui>
-                
+   <header>
+    <ul class="nav">
+            <ul>
+                <li>Marianna E. Sternefeld</li>
                 <li><a href = "./index.html">Home</a></li>
                 <li><a href = "./about.html">About Me</a></li>
                 <li><a href = "./resume.html">Resume/Portfolio</a></li>
                 <li><a href = "./contact.php">Contact Me</a></li>
-            </ui>
-        </nav>
+                <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+            </ul>
+        </ul>
     </header>
     <div id="wrapper">
         <div id="onecol">
             <h5>My Current Resume: <a href="./MESResume.pdf" id="link">View</a></h5>
             <br />
             <br />
-            <h5>Portfolio to come</h5>
+            <h5>Projects:</h5>
+            <table>
+        <tr>
+            <td id="tablePort">
+                <a href="/codefucious"><img src="pictures/Portfolio/code.png" width= "250px" height = "auto"/></a>
+                <br />Codefucious: This was a project for WiCHacks 2016. I learned to utilize JavaScript for the storybook portion of the site under "Learn Java." Also found on my GitHub.<br />
+            </td>
+            <td id="tablePort">
+                <a href = "http://michaelabutler.net/OnceUponACoder/index.html"><img src="pictures/Portfolio/coder.png" width= "250px" height = "auto"/></a><br />
+                Once Upon A Coder: This was a project for WiCHacks 2015. I joined the team late but was able to help with research and putting together some of the pages.<br />
+            </td>
+        </tr>    
+    </table>
+            <br />
+            <h5>Portfolio:</h5>
+            Here is a slideshow of my graphic art projects over the years. The examples below are original artworks.<br />
+            <a class="example-image-link" href="pictures/Portfolio/TigerIceCream.jpg" data-lightbox="portfolioPictures" data-title="2012. Graphic Art. Showcased in the Sussex County Teen Arts Festival."><img class="example-image" src="pictures/Portfolio/portfolioStart.png" width= "250px" height = "auto" alt=""/></a>
+            <a class="example-image-link" href="pictures/Portfolio/color.png" data-lightbox="portfolioPictures" data-title="2011. Graphic Art. Showcased in the Sussex County Teen Arts Festival. Picked to be shown around Sussex County."></a>
+            <a class="example-image-link" href="pictures/Portfolio/eye.png" data-lightbox="portfolioPictures" data-title="2010. Graphic Art. Showcased in the Sussex County Teen Arts Festival."></a>
+            <a class="example-image-link" href="pictures/Portfolio/ulysses.jpg" data-lightbox="portfolioPictures" data-title="Used for a project in 2011 for a class."></a>
+            
         </div>
                 
         <footer>
@@ -41,6 +64,11 @@
             </section>
         </footer>
     </div>
-    <script src="./mm-fontsize.js" type="text/javascript"></script>  
+    <script>
+        function myFunction() {
+            document.getElementsByClassName("nav")[0].classList.toggle("responsive");
+        }
+    </script>   
+    <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

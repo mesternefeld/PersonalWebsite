@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.grey-red.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -14,24 +15,25 @@
 </head>
 <body>
     <header>
-        <h1>Marianna E. Sternefeld</h1>
-    <nav>
-        
-            <ui>
-                
+    <ul class="nav">
+            <ul>
+                <li>Marianna E. Sternefeld</li>
                 <li><a href = "./index.html">Home</a></li>
                 <li><a href = "./about.html">About Me</a></li>
                 <li><a href = "./resume.html">Resume/Portfolio</a></li>
                 <li><a href = "./contact.php">Contact Me</a></li>
-            </ui>
-        </nav>
+                <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+            </ul>
+        </ul>
     </header>
     <div id="wrapper">
         <div id="onecol">
             <img src="pictures/profile.png" id="aboutme"> 
-            <p id="about">Marianna is a first year Software Engineering student at Rochester Institute of Technology. Currently, she is going into her second semester and loves it. Growing up in a tech family, it seemed obvious Marianna would go into the technology world somehow. During the summer after sixth grade, she found out what she could do with HTML/CSS and became intrigued. From then on, she has been coding ever since. </p>
-            <p id="about">Marianna is an active member of her community being involved in both Women In Computing (WiC) and the Society of Software Engineers. Through both organizations, she has helped out with Open Houses as she loves the opportunity to give back to the community. For WiC, she volunteered for the WE@RIT/WiC Open House and taught young girls how to program using Java in RoboCode. Though tiring, she found this opportunity fulfilling. Inspiring young girls is something she loves to do and plans on helping out other young girls in the future. In High School, Marianna was the founding president of the Pope John XXIII High School chapter of Girls Who Code and plans on staying involved in the chapter sharing her knowledge to the younger students as college progresses. </p>
-            <p id="about">In her spare time, Marianna enjoys reading works of fiction. Books were Marianna's first love and she has no plans on breaking up with them. For most of her life, she has had an interest in the arts. Dancing has always been something she enjoyed and has plans to continue dancing through life as much as she can. Besides dancing, around the time she started coding, Marianna found she has a knack for digital art. Her portfolio has her projects, some of which have been recognized.  </p>
+            <p id="about">Marianna is a second year Software Engineering student at Rochester Institute of Technology. Currently, she is going into her third semester and loves it. Growing up in a tech family, it seemed obvious Marianna would go into the technology world somehow. During the summer after sixth grade, she found out what she could do with HTML/CSS and became intrigued. From then on, she has been coding ever since. </p>
+            <p id="about">Marianna is an active member of her community being involved in both the Society of Software Engineers (SSE) and Women In Computing (WiC). Through both organizations, she has helped out with Open Houses as she loves the opportunity to give back to the community. She plans on being more involved in the SSE by being the secretary for next year. She knows this will be a challenge but one that will be rewarding. For WiC, she volunteered for the WE@RIT/WiC Open House and taught young girls how to program using Java in RoboCode. Though tiring, she found this opportunity fulfilling. Inspiring young girls is something she loves to do and plans on helping out other young girls in the future. In High School, Marianna was the founding president of the Pope John XXIII High School chapter of Girls Who Code and plans on staying involved in the chapter sharing her knowledge to the younger students as college progresses. </p>
+            <p id="about">In her spare time, Marianna enjoys reading works of fiction. Books were Marianna's first love and she has no plans on breaking up with them. For most of her life, she has had an interest in the arts. Dancing has always been something she enjoyed and  plans to continue through life as much as she can. Besides dancing, around the time she started coding, Marianna found she has a knack for digital art. Her portfolio has her projects, some of which have been recognized in her local community. Besides coding languages, Marianna has found a connection to her heritage through her five years of learning the Italian culture and language. She found a love for the language and hopes to finish the advanced Italian classes.</p>
         </div>
         <footer>
             <section>
@@ -40,6 +42,10 @@
             </section>
         </footer>
     </div>
-    <script src="./mm-fontsize.js" type="text/javascript"></script>  
+    <script>
+        function myFunction() {
+            document.getElementsByClassName("nav")[0].classList.toggle("responsive");
+        }
+    </script> 
 </body>
 </html>

@@ -13,49 +13,59 @@ html, body {
     }
     header {
         width:100%;
-        height:5%;
+        height:auto;
         min-height: 50px;
-        min-width: 1000px;
+        /*min-width: 1000px;*/
         background-color: #F5F5F5;
+        
+        top:0%;
         box-shadow: inset 0px 0px 10px 1px rgba(119, 119, 119, 0.65);
         -moz-box-shadow: inset 0px 0px 10px 1px rgba(119, 119, 119, 0.65);
         -webkit-box-shadow: inset 0px 0px 10px 1px rgba(119, 119, 119, 0.65);
     }
-    nav{
-        position:relative; 
-        width:50%;
-        left:40%;
-        height: 100%;
-        min-height: 50px;
-        min-width: 400px;
-        top:0%;
-        background-color: none;
-        text-align: center;
+    ul.nav {
+      position:relative; 
+      text-align: center;
+
+      margin: 0 auto;
+      list-style-type: none;
+      padding: 0;
+      overflow: hidden;
+      justify-content: space-around;
     }
-    nav li { 
-        display: inline-flex;
-        height: 100%;
-        padding-top: 15px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 0 5px 0;
-        text-align:center;  
-        justify-content: space-around;
+
+    ul.nav li {
+      list-style-type: none;
+      display: inline-block;
+      color: #000000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 20px;
     }
-    nav li:hover {
-        height:70%;
+
+    ul.nav li a {
+      list-style-type: none;
+      display: inline-block;
+      color: #000000;
+      text-align: center;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    ul.nav li:hover:not(:first-child) {
         background-color: #E2DDD9;
+        height:100%;
         box-shadow: inset 0px 0px 0px 1px rgba(119, 119, 119, 0.35);
         -moz-box-shadow: inset 0px 0px 10px 1px rgba(119, 119, 119, 0.35);
         -webkit-box-shadow: inset 0px 0px 10px 1px rgba(119, 119, 119, 0.35);
     }
-    
-    nav a{
-        text-decoration: none;
-        font-size: 1.1vw;
-        min-font-size: 15px;
-        color:#000000;
-    }
+
+    ul.nav li.icon {display: none;}
+
+
     section { 
         position: relative;
         width:70%;
@@ -72,11 +82,11 @@ html, body {
     }
     
     h1 {
-        position: absolute;
-        left:15%;
+        position: relative;
+        left:0%;
         font-style:none;
         font-weight: bold;
-        top:-1%;
+        top:0%;
         font-size: 25px;
         font-family: 'Arvo', serif;
     }
@@ -132,6 +142,7 @@ html, body {
         width:40%;
     }
 #me {
+        display: auto;
         position: relative;
         width:50%;
         min-width: 200px;
@@ -145,7 +156,7 @@ html, body {
 #wrapper {
     padding-top: 10px;
     width: 100%;
-    min-width: 1000px;
+   /* min-width: 1000px;*/
     background-color: #F0E8D0;
     margin-left:auto;
     margin-right:auto;
@@ -153,25 +164,25 @@ html, body {
 #center {
     text-align: center;
     padding-top: 10px;
-    min-width: 200px;
+    /*min-width: 200px;*/
     float: left;
-    width:15%;
+    width:30%;
 }
 #rightcol {
     
     text-align: center;
     padding-top: 10px;
-    min-width: 200px;
+    /*min-width: 200px;*/
     float: left;
-    width: 15%;
+    width: 30%;
 }
 #leftcol {
     text-align: center;
     padding-top: 10px;
-    padding-left: 27.5%;
-    min-width: 200px;
+    padding-left: 5%;
+    /*min-width: 200px;*/
     float: left;
-    width: 15%;
+    width: 30%;
 }
 #onecol {
     text-align: center;
@@ -229,4 +240,88 @@ input:focus, textarea:focus {
         font-family: 'Georgia';
         line-height: normal;
     
+}
+#tablePort{
+        position: relative;
+        top:0%;
+        width:200px;
+        padding: 5px;
+        height:auto;
+        left:0%;
+    
+    }
+
+
+@media screen and (max-width:780px) {
+  #me{
+      display:none !important;
+    }
+    table tr > *{
+        display: block;
+    }
+    table tr {
+        display: table-cell;
+    }
+}
+  
+@media screen and (max-width:700px) {
+  ul.nav li:not(:first-child) {display: none;}
+  ul.nav li.icon {
+    float: right;
+    display: inline-block;
+  }
+    #tabletext{
+        padding-left: 0px;
+        min-width: 400px;
+        width:30%;
+    }
+    #aboutme{
+        border-radius: 150px;
+        float: right; 
+        margin-left: 5px;
+        width: 50%;
+        height: 50%;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+  ul.nav.responsive {
+      position: relative;
+      height: auto;
+      background-color: none;
+    }
+  ul.nav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: none;
+  }
+    
+    
+  ul.nav.responsive li {
+    float: none;
+    display: block;
+    background-color: none;
+  }
+  ul.nav.responsive li a {
+    display: block;
+    text-align: left;
+    width: 100%;
+    background-color: none;
+  }
+}
+form{
+    width:50%;
+}
+input[type=text], input[type=url], input[type=email],  textarea[type=text] {
+  -webkit-appearance: none; -moz-appearance: none;
+  display: block;
+  margin: 0;
+  width: 100%; height: 20px;
+  line-height: 20px; font-size: 14px;
+  border: 1px solid #bbb;
+}
+input[type=submit]{
+    width: 100%; height: 40px;
 }
