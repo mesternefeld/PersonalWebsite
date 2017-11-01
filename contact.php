@@ -33,6 +33,7 @@
             <a href="https://github.com/mesternefeld"><img src="pictures/icons/iconmonstr-github-1-72.png" id="social"></a><a href="https://www.linkedin.com/in/mesternefeld"><img src="pictures/icons/iconmonstr-linkedin-4-72.png" id="social"></a><a href="mailto:marianna@sternefeld.com"><img src="pictures/icons/iconmonstr-email-10-72.png" id="social"></a><a href="https://www.facebook.com/profile.php?id=1818846390"><img src="pictures/icons/iconmonstr-facebook-4-72.png" id="social"></a>
             <br /><br /><br />
             <?php
+                // Nice language choice!!!
                 $name = $_POST['name'];
                 $email = $_POST['email'];
                 $message = $_POST['message'];
