@@ -3,6 +3,6 @@ The code for my personal website. Includes PHP contact form and the site is util
 
 
 Contains the following features:
-- a way to contact me
-- some of my projects
-- some of my artwork
+- a way to contact me.
+- some of my projects.
+- some of my artwork.
